@@ -61,7 +61,23 @@ namespace Paint_CSharp
             PictureBox p = (PictureBox)sender;
             pen.Color = p.BackColor;
         }
+        private void orangePic_Click(object sender, EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            pen.Color = p.BackColor;
+        }
 
+        private void purplePic_Click(object sender, EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            pen.Color = p.BackColor;
+        }
+
+        private void pinkPic_Click(object sender, EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            pen.Color = p.BackColor;
+        }
         private void mainPanel_MouseDown(object sender, MouseEventArgs e)
         {
             moving = true;

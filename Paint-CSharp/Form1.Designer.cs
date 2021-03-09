@@ -151,6 +151,7 @@ namespace Paint_CSharp
             this.orangePic.Size = new System.Drawing.Size(45, 42);
             this.orangePic.TabIndex = 5;
             this.orangePic.TabStop = false;
+            this.orangePic.Click += new System.EventHandler(this.orangePic_Click);
             // 
             // purplePic
             // 
@@ -160,6 +161,7 @@ namespace Paint_CSharp
             this.purplePic.Size = new System.Drawing.Size(45, 42);
             this.purplePic.TabIndex = 6;
             this.purplePic.TabStop = false;
+            this.purplePic.Click += new System.EventHandler(this.purplePic_Click);
             // 
             // pinkPic
             // 
@@ -169,6 +171,7 @@ namespace Paint_CSharp
             this.pinkPic.Size = new System.Drawing.Size(45, 42);
             this.pinkPic.TabIndex = 7;
             this.pinkPic.TabStop = false;
+            this.pinkPic.Click += new System.EventHandler(this.pinkPic_Click);
             // 
             // Form1
             // 
