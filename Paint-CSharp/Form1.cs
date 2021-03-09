@@ -12,10 +12,14 @@ namespace Paint_CSharp
 {
     public partial class Form1 : Form
     {
+        //initializes the graphics panel used to hold user drawing
         Graphics g;
+        //initializes x and y variables to be used for pen location later
         int x = -1;
         int y = -1;
+        //a boolean to keep track of whether the pen is moving or not
         bool moving = false;
+        //initializes the pen for drawing
         Pen pen;
 
         public Form1()
@@ -102,6 +106,11 @@ namespace Paint_CSharp
             x = -1;
             y = -1;
             mainPanel.Cursor = Cursors.Default;
+        }
+
+        private void clearPic_Click_1(object sender, EventArgs e)
+        {
+            g.Clear(Color.White);
         }
     }
 }

@@ -41,6 +41,8 @@ namespace Paint_CSharp
             this.yellowPic = new System.Windows.Forms.PictureBox();
             this.bluePic = new System.Windows.Forms.PictureBox();
             this.redPic = new System.Windows.Forms.PictureBox();
+            this.clearPic = new System.Windows.Forms.PictureBox();
+            this.resetLabel = new System.Windows.Forms.Label();
             this.mainPanel.SuspendLayout();
             this.colorPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pinkPic)).BeginInit();
@@ -52,6 +54,7 @@ namespace Paint_CSharp
             ((System.ComponentModel.ISupportInitialize)(this.yellowPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bluePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clearPic)).BeginInit();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -82,6 +85,8 @@ namespace Paint_CSharp
             // colorPanel
             // 
             this.colorPanel.BackColor = System.Drawing.Color.Gray;
+            this.colorPanel.Controls.Add(this.resetLabel);
+            this.colorPanel.Controls.Add(this.clearPic);
             this.colorPanel.Controls.Add(this.pinkPic);
             this.colorPanel.Controls.Add(this.purplePic);
             this.colorPanel.Controls.Add(this.orangePic);
@@ -91,9 +96,9 @@ namespace Paint_CSharp
             this.colorPanel.Controls.Add(this.yellowPic);
             this.colorPanel.Controls.Add(this.bluePic);
             this.colorPanel.Controls.Add(this.redPic);
-            this.colorPanel.Location = new System.Drawing.Point(871, 12);
+            this.colorPanel.Location = new System.Drawing.Point(820, 12);
             this.colorPanel.Name = "colorPanel";
-            this.colorPanel.Size = new System.Drawing.Size(487, 48);
+            this.colorPanel.Size = new System.Drawing.Size(538, 48);
             this.colorPanel.TabIndex = 0;
             // 
             // pinkPic
@@ -186,6 +191,29 @@ namespace Paint_CSharp
             this.redPic.TabStop = false;
             this.redPic.Click += new System.EventHandler(this.redPic_Click);
             // 
+            // clearPic
+            // 
+            this.clearPic.BackColor = System.Drawing.Color.White;
+            this.clearPic.Location = new System.Drawing.Point(487, 3);
+            this.clearPic.Name = "clearPic";
+            this.clearPic.Size = new System.Drawing.Size(45, 42);
+            this.clearPic.TabIndex = 2;
+            this.clearPic.TabStop = false;
+            this.clearPic.Click += new System.EventHandler(this.clearPic_Click_1);
+            // 
+            // resetLabel
+            // 
+            this.resetLabel.AutoSize = true;
+            this.resetLabel.BackColor = System.Drawing.Color.White;
+            this.resetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetLabel.ForeColor = System.Drawing.Color.Red;
+            this.resetLabel.Location = new System.Drawing.Point(490, 18);
+            this.resetLabel.Name = "resetLabel";
+            this.resetLabel.Size = new System.Drawing.Size(40, 12);
+            this.resetLabel.TabIndex = 2;
+            this.resetLabel.Text = "RESET";
+            this.resetLabel.Click += new System.EventHandler(this.clearPic_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,6 +225,7 @@ namespace Paint_CSharp
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             this.colorPanel.ResumeLayout(false);
+            this.colorPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pinkPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purplePic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orangePic)).EndInit();
@@ -206,6 +235,7 @@ namespace Paint_CSharp
             ((System.ComponentModel.ISupportInitialize)(this.yellowPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bluePic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clearPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,6 +254,8 @@ namespace Paint_CSharp
         private System.Windows.Forms.PictureBox purplePic;
         private System.Windows.Forms.PictureBox orangePic;
         private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.Label resetLabel;
+        private System.Windows.Forms.PictureBox clearPic;
     }
 }
 
