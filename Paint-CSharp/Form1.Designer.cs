@@ -31,20 +31,26 @@ namespace Paint_CSharp
         {
             this.mainPanel = new System.Windows.Forms.Panel();
             this.colorPanel = new System.Windows.Forms.Panel();
-            this.redPic = new System.Windows.Forms.PictureBox();
-            this.bluePic = new System.Windows.Forms.PictureBox();
-            this.yellowPic = new System.Windows.Forms.PictureBox();
-            this.greenPic = new System.Windows.Forms.PictureBox();
-            this.blackPic = new System.Windows.Forms.PictureBox();
             this.whitePic = new System.Windows.Forms.PictureBox();
+            this.blackPic = new System.Windows.Forms.PictureBox();
+            this.greenPic = new System.Windows.Forms.PictureBox();
+            this.yellowPic = new System.Windows.Forms.PictureBox();
+            this.bluePic = new System.Windows.Forms.PictureBox();
+            this.redPic = new System.Windows.Forms.PictureBox();
+            this.orangePic = new System.Windows.Forms.PictureBox();
+            this.purplePic = new System.Windows.Forms.PictureBox();
+            this.pinkPic = new System.Windows.Forms.PictureBox();
             this.mainPanel.SuspendLayout();
             this.colorPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.redPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bluePic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yellowPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.greenPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.blackPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.whitePic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blackPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellowPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bluePic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orangePic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purplePic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pinkPic)).BeginInit();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -54,7 +60,7 @@ namespace Paint_CSharp
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1546, 1069);
+            this.mainPanel.Size = new System.Drawing.Size(1370, 749);
             this.mainPanel.TabIndex = 0;
             this.mainPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPanel_MouseDown);
             this.mainPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainPanel_MouseMove);
@@ -63,46 +69,39 @@ namespace Paint_CSharp
             // colorPanel
             // 
             this.colorPanel.BackColor = System.Drawing.Color.Gray;
+            this.colorPanel.Controls.Add(this.pinkPic);
+            this.colorPanel.Controls.Add(this.purplePic);
+            this.colorPanel.Controls.Add(this.orangePic);
             this.colorPanel.Controls.Add(this.whitePic);
             this.colorPanel.Controls.Add(this.blackPic);
             this.colorPanel.Controls.Add(this.greenPic);
             this.colorPanel.Controls.Add(this.yellowPic);
             this.colorPanel.Controls.Add(this.bluePic);
             this.colorPanel.Controls.Add(this.redPic);
-            this.colorPanel.Location = new System.Drawing.Point(1202, 12);
+            this.colorPanel.Location = new System.Drawing.Point(871, 12);
             this.colorPanel.Name = "colorPanel";
-            this.colorPanel.Size = new System.Drawing.Size(332, 48);
+            this.colorPanel.Size = new System.Drawing.Size(487, 48);
             this.colorPanel.TabIndex = 0;
             // 
-            // redPic
+            // whitePic
             // 
-            this.redPic.BackColor = System.Drawing.Color.Red;
-            this.redPic.Location = new System.Drawing.Point(28, 3);
-            this.redPic.Name = "redPic";
-            this.redPic.Size = new System.Drawing.Size(45, 42);
-            this.redPic.TabIndex = 0;
-            this.redPic.TabStop = false;
-            this.redPic.Click += new System.EventHandler(this.redPic_Click);
+            this.whitePic.BackColor = System.Drawing.Color.White;
+            this.whitePic.Location = new System.Drawing.Point(436, 3);
+            this.whitePic.Name = "whitePic";
+            this.whitePic.Size = new System.Drawing.Size(45, 42);
+            this.whitePic.TabIndex = 1;
+            this.whitePic.TabStop = false;
+            this.whitePic.Click += new System.EventHandler(this.whitePic_Click);
             // 
-            // bluePic
+            // blackPic
             // 
-            this.bluePic.BackColor = System.Drawing.Color.Blue;
-            this.bluePic.Location = new System.Drawing.Point(79, 3);
-            this.bluePic.Name = "bluePic";
-            this.bluePic.Size = new System.Drawing.Size(45, 42);
-            this.bluePic.TabIndex = 1;
-            this.bluePic.TabStop = false;
-            this.bluePic.Click += new System.EventHandler(this.bluePic_Click);
-            // 
-            // yellowPic
-            // 
-            this.yellowPic.BackColor = System.Drawing.Color.Yellow;
-            this.yellowPic.Location = new System.Drawing.Point(130, 3);
-            this.yellowPic.Name = "yellowPic";
-            this.yellowPic.Size = new System.Drawing.Size(45, 42);
-            this.yellowPic.TabIndex = 2;
-            this.yellowPic.TabStop = false;
-            this.yellowPic.Click += new System.EventHandler(this.yellowPic_Click);
+            this.blackPic.BackColor = System.Drawing.Color.Black;
+            this.blackPic.Location = new System.Drawing.Point(385, 3);
+            this.blackPic.Name = "blackPic";
+            this.blackPic.Size = new System.Drawing.Size(45, 42);
+            this.blackPic.TabIndex = 4;
+            this.blackPic.TabStop = false;
+            this.blackPic.Click += new System.EventHandler(this.blackPic_Click);
             // 
             // greenPic
             // 
@@ -114,42 +113,82 @@ namespace Paint_CSharp
             this.greenPic.TabStop = false;
             this.greenPic.Click += new System.EventHandler(this.greenPic_Click);
             // 
-            // blackPic
+            // yellowPic
             // 
-            this.blackPic.BackColor = System.Drawing.Color.Black;
-            this.blackPic.Location = new System.Drawing.Point(232, 3);
-            this.blackPic.Name = "blackPic";
-            this.blackPic.Size = new System.Drawing.Size(45, 42);
-            this.blackPic.TabIndex = 4;
-            this.blackPic.TabStop = false;
-            this.blackPic.Click += new System.EventHandler(this.blackPic_Click);
+            this.yellowPic.BackColor = System.Drawing.Color.Yellow;
+            this.yellowPic.Location = new System.Drawing.Point(130, 3);
+            this.yellowPic.Name = "yellowPic";
+            this.yellowPic.Size = new System.Drawing.Size(45, 42);
+            this.yellowPic.TabIndex = 2;
+            this.yellowPic.TabStop = false;
+            this.yellowPic.Click += new System.EventHandler(this.yellowPic_Click);
             // 
-            // whitePic
+            // bluePic
             // 
-            this.whitePic.BackColor = System.Drawing.Color.White;
-            this.whitePic.Location = new System.Drawing.Point(283, 3);
-            this.whitePic.Name = "whitePic";
-            this.whitePic.Size = new System.Drawing.Size(45, 42);
-            this.whitePic.TabIndex = 1;
-            this.whitePic.TabStop = false;
-            this.whitePic.Click += new System.EventHandler(this.whitePic_Click);
+            this.bluePic.BackColor = System.Drawing.Color.Blue;
+            this.bluePic.Location = new System.Drawing.Point(79, 3);
+            this.bluePic.Name = "bluePic";
+            this.bluePic.Size = new System.Drawing.Size(45, 42);
+            this.bluePic.TabIndex = 1;
+            this.bluePic.TabStop = false;
+            this.bluePic.Click += new System.EventHandler(this.bluePic_Click);
+            // 
+            // redPic
+            // 
+            this.redPic.BackColor = System.Drawing.Color.Red;
+            this.redPic.Location = new System.Drawing.Point(28, 3);
+            this.redPic.Name = "redPic";
+            this.redPic.Size = new System.Drawing.Size(45, 42);
+            this.redPic.TabIndex = 0;
+            this.redPic.TabStop = false;
+            this.redPic.Click += new System.EventHandler(this.redPic_Click);
+            // 
+            // orangePic
+            // 
+            this.orangePic.BackColor = System.Drawing.Color.Orange;
+            this.orangePic.Location = new System.Drawing.Point(232, 3);
+            this.orangePic.Name = "orangePic";
+            this.orangePic.Size = new System.Drawing.Size(45, 42);
+            this.orangePic.TabIndex = 5;
+            this.orangePic.TabStop = false;
+            // 
+            // purplePic
+            // 
+            this.purplePic.BackColor = System.Drawing.Color.Purple;
+            this.purplePic.Location = new System.Drawing.Point(283, 3);
+            this.purplePic.Name = "purplePic";
+            this.purplePic.Size = new System.Drawing.Size(45, 42);
+            this.purplePic.TabIndex = 6;
+            this.purplePic.TabStop = false;
+            // 
+            // pinkPic
+            // 
+            this.pinkPic.BackColor = System.Drawing.Color.DeepPink;
+            this.pinkPic.Location = new System.Drawing.Point(334, 3);
+            this.pinkPic.Name = "pinkPic";
+            this.pinkPic.Size = new System.Drawing.Size(45, 42);
+            this.pinkPic.TabIndex = 7;
+            this.pinkPic.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1546, 1069);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.mainPanel);
             this.Name = "Form1";
             this.Text = "Form1";
             this.mainPanel.ResumeLayout(false);
             this.colorPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.redPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bluePic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yellowPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.greenPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.blackPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.whitePic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blackPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greenPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yellowPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bluePic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orangePic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purplePic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pinkPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -164,6 +203,9 @@ namespace Paint_CSharp
         private System.Windows.Forms.PictureBox yellowPic;
         private System.Windows.Forms.PictureBox bluePic;
         private System.Windows.Forms.PictureBox redPic;
+        private System.Windows.Forms.PictureBox pinkPic;
+        private System.Windows.Forms.PictureBox purplePic;
+        private System.Windows.Forms.PictureBox orangePic;
     }
 }
 
