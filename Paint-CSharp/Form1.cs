@@ -67,6 +67,7 @@ namespace Paint_CSharp
             moving = true;
             x = e.X;
             y = e.Y;
+            mainPanel.Cursor = Cursors.Cross;
         }
 
         private void mainPanel_MouseMove(object sender, MouseEventArgs e)
@@ -84,6 +85,7 @@ namespace Paint_CSharp
             moving = false;
             x = -1;
             y = -1;
+            mainPanel.Cursor = Cursors.Default;
         }
 
     }
