@@ -43,6 +43,8 @@ namespace Paint_CSharp
             if (moving && x != -1 && y != -1)
             {
                 g.DrawLine(pen, new Point(x, y), e.Location);
+                x = e.X;
+                y = e.Y;
             }
         }
 
