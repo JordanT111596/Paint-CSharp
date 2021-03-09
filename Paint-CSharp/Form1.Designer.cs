@@ -30,32 +30,34 @@ namespace Paint_CSharp
         private void InitializeComponent()
         {
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.colorPanel = new System.Windows.Forms.Panel();
+            this.pinkPic = new System.Windows.Forms.PictureBox();
+            this.purplePic = new System.Windows.Forms.PictureBox();
+            this.orangePic = new System.Windows.Forms.PictureBox();
             this.whitePic = new System.Windows.Forms.PictureBox();
             this.blackPic = new System.Windows.Forms.PictureBox();
             this.greenPic = new System.Windows.Forms.PictureBox();
             this.yellowPic = new System.Windows.Forms.PictureBox();
             this.bluePic = new System.Windows.Forms.PictureBox();
             this.redPic = new System.Windows.Forms.PictureBox();
-            this.orangePic = new System.Windows.Forms.PictureBox();
-            this.purplePic = new System.Windows.Forms.PictureBox();
-            this.pinkPic = new System.Windows.Forms.PictureBox();
             this.mainPanel.SuspendLayout();
             this.colorPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pinkPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purplePic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orangePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.whitePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blackPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bluePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.orangePic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purplePic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pinkPic)).BeginInit();
             this.SuspendLayout();
             // 
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.White;
+            this.mainPanel.Controls.Add(this.titleLabel);
             this.mainPanel.Controls.Add(this.colorPanel);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
@@ -65,6 +67,17 @@ namespace Paint_CSharp
             this.mainPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPanel_MouseDown);
             this.mainPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainPanel_MouseMove);
             this.mainPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mainPanel_MouseUp);
+            // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.titleLabel.Font = new System.Drawing.Font("MV Boli", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Location = new System.Drawing.Point(125, 24);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(660, 28);
+            this.titleLabel.TabIndex = 1;
+            this.titleLabel.Text = "Jordan\'s C# Paint! Click on a box to change the pen color!";
             // 
             // colorPanel
             // 
@@ -82,6 +95,36 @@ namespace Paint_CSharp
             this.colorPanel.Name = "colorPanel";
             this.colorPanel.Size = new System.Drawing.Size(487, 48);
             this.colorPanel.TabIndex = 0;
+            // 
+            // pinkPic
+            // 
+            this.pinkPic.BackColor = System.Drawing.Color.DeepPink;
+            this.pinkPic.Location = new System.Drawing.Point(334, 3);
+            this.pinkPic.Name = "pinkPic";
+            this.pinkPic.Size = new System.Drawing.Size(45, 42);
+            this.pinkPic.TabIndex = 7;
+            this.pinkPic.TabStop = false;
+            this.pinkPic.Click += new System.EventHandler(this.pinkPic_Click);
+            // 
+            // purplePic
+            // 
+            this.purplePic.BackColor = System.Drawing.Color.Purple;
+            this.purplePic.Location = new System.Drawing.Point(283, 3);
+            this.purplePic.Name = "purplePic";
+            this.purplePic.Size = new System.Drawing.Size(45, 42);
+            this.purplePic.TabIndex = 6;
+            this.purplePic.TabStop = false;
+            this.purplePic.Click += new System.EventHandler(this.purplePic_Click);
+            // 
+            // orangePic
+            // 
+            this.orangePic.BackColor = System.Drawing.Color.Orange;
+            this.orangePic.Location = new System.Drawing.Point(232, 3);
+            this.orangePic.Name = "orangePic";
+            this.orangePic.Size = new System.Drawing.Size(45, 42);
+            this.orangePic.TabIndex = 5;
+            this.orangePic.TabStop = false;
+            this.orangePic.Click += new System.EventHandler(this.orangePic_Click);
             // 
             // whitePic
             // 
@@ -143,36 +186,6 @@ namespace Paint_CSharp
             this.redPic.TabStop = false;
             this.redPic.Click += new System.EventHandler(this.redPic_Click);
             // 
-            // orangePic
-            // 
-            this.orangePic.BackColor = System.Drawing.Color.Orange;
-            this.orangePic.Location = new System.Drawing.Point(232, 3);
-            this.orangePic.Name = "orangePic";
-            this.orangePic.Size = new System.Drawing.Size(45, 42);
-            this.orangePic.TabIndex = 5;
-            this.orangePic.TabStop = false;
-            this.orangePic.Click += new System.EventHandler(this.orangePic_Click);
-            // 
-            // purplePic
-            // 
-            this.purplePic.BackColor = System.Drawing.Color.Purple;
-            this.purplePic.Location = new System.Drawing.Point(283, 3);
-            this.purplePic.Name = "purplePic";
-            this.purplePic.Size = new System.Drawing.Size(45, 42);
-            this.purplePic.TabIndex = 6;
-            this.purplePic.TabStop = false;
-            this.purplePic.Click += new System.EventHandler(this.purplePic_Click);
-            // 
-            // pinkPic
-            // 
-            this.pinkPic.BackColor = System.Drawing.Color.DeepPink;
-            this.pinkPic.Location = new System.Drawing.Point(334, 3);
-            this.pinkPic.Name = "pinkPic";
-            this.pinkPic.Size = new System.Drawing.Size(45, 42);
-            this.pinkPic.TabIndex = 7;
-            this.pinkPic.TabStop = false;
-            this.pinkPic.Click += new System.EventHandler(this.pinkPic_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,16 +195,17 @@ namespace Paint_CSharp
             this.Name = "Form1";
             this.Text = "Form1";
             this.mainPanel.ResumeLayout(false);
+            this.mainPanel.PerformLayout();
             this.colorPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pinkPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purplePic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orangePic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.whitePic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blackPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bluePic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.orangePic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purplePic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pinkPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,6 +223,7 @@ namespace Paint_CSharp
         private System.Windows.Forms.PictureBox pinkPic;
         private System.Windows.Forms.PictureBox purplePic;
         private System.Windows.Forms.PictureBox orangePic;
+        private System.Windows.Forms.Label titleLabel;
     }
 }
 

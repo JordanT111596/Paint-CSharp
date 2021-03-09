@@ -103,6 +103,5 @@ namespace Paint_CSharp
             y = -1;
             mainPanel.Cursor = Cursors.Default;
         }
-
     }
 }
