@@ -1,0 +1,10 @@
+C:\Users\jorda\Sandbox\C# Practice\Paint-CSharp\Paint-CSharp\bin\Debug\Paint-CSharp.exe.config
+C:\Users\jorda\Sandbox\C# Practice\Paint-CSharp\Paint-CSharp\bin\Debug\Paint-CSharp.exe
+C:\Users\jorda\Sandbox\C# Practice\Paint-CSharp\Paint-CSharp\bin\Debug\Paint-CSharp.pdb
+C:\Users\jorda\Sandbox\C# Practice\Paint-CSharp\Paint-CSharp\obj\Debug\Paint-CSharp.csprojAssemblyReference.cache
+C:\Users\jorda\Sandbox\C# Practice\Paint-CSharp\Paint-CSharp\obj\Debug\Paint_CSharp.Form1.resources
+C:\Users\jorda\Sandbox\C# Practice\Paint-CSharp\Paint-CSharp\obj\Debug\Paint_CSharp.Properties.Resources.resources
+C:\Users\jorda\Sandbox\C# Practice\Paint-CSharp\Paint-CSharp\obj\Debug\Paint-CSharp.csproj.GenerateResource.cache
+C:\Users\jorda\Sandbox\C# Practice\Paint-CSharp\Paint-CSharp\obj\Debug\Paint-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\jorda\Sandbox\C# Practice\Paint-CSharp\Paint-CSharp\obj\Debug\Paint-CSharp.exe
+C:\Users\jorda\Sandbox\C# Practice\Paint-CSharp\Paint-CSharp\obj\Debug\Paint-CSharp.pdb
