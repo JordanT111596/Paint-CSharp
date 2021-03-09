@@ -24,6 +24,7 @@ namespace Paint_CSharp
             g = mainPanel.CreateGraphics();
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             pen = new Pen(Color.Black, 5);
+            pen.StartCap = pen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
         }
 
         private void redPic_Click(object sender, EventArgs e)
