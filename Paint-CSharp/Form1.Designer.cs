@@ -92,6 +92,7 @@ namespace Paint_CSharp
             this.bluePic.Size = new System.Drawing.Size(45, 42);
             this.bluePic.TabIndex = 1;
             this.bluePic.TabStop = false;
+            this.bluePic.Click += new System.EventHandler(this.bluePic_Click);
             // 
             // yellowPic
             // 
@@ -101,6 +102,7 @@ namespace Paint_CSharp
             this.yellowPic.Size = new System.Drawing.Size(45, 42);
             this.yellowPic.TabIndex = 2;
             this.yellowPic.TabStop = false;
+            this.yellowPic.Click += new System.EventHandler(this.yellowPic_Click);
             // 
             // greenPic
             // 
@@ -110,6 +112,7 @@ namespace Paint_CSharp
             this.greenPic.Size = new System.Drawing.Size(45, 42);
             this.greenPic.TabIndex = 3;
             this.greenPic.TabStop = false;
+            this.greenPic.Click += new System.EventHandler(this.greenPic_Click);
             // 
             // blackPic
             // 
@@ -119,6 +122,7 @@ namespace Paint_CSharp
             this.blackPic.Size = new System.Drawing.Size(45, 42);
             this.blackPic.TabIndex = 4;
             this.blackPic.TabStop = false;
+            this.blackPic.Click += new System.EventHandler(this.blackPic_Click);
             // 
             // whitePic
             // 
@@ -128,6 +132,7 @@ namespace Paint_CSharp
             this.whitePic.Size = new System.Drawing.Size(45, 42);
             this.whitePic.TabIndex = 1;
             this.whitePic.TabStop = false;
+            this.whitePic.Click += new System.EventHandler(this.whitePic_Click);
             // 
             // Form1
             // 

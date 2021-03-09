@@ -22,10 +22,40 @@ namespace Paint_CSharp
         {
             InitializeComponent();
             g = mainPanel.CreateGraphics();
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             pen = new Pen(Color.Black, 5);
         }
 
         private void redPic_Click(object sender, EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            pen.Color = p.BackColor;
+        }
+        private void bluePic_Click(object sender, EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            pen.Color = p.BackColor;
+        }
+
+        private void yellowPic_Click(object sender, EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            pen.Color = p.BackColor;
+        }
+
+        private void greenPic_Click(object sender, EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            pen.Color = p.BackColor;
+        }
+
+        private void blackPic_Click(object sender, EventArgs e)
+        {
+            PictureBox p = (PictureBox)sender;
+            pen.Color = p.BackColor;
+        }
+
+        private void whitePic_Click(object sender, EventArgs e)
         {
             PictureBox p = (PictureBox)sender;
             pen.Color = p.BackColor;
@@ -54,5 +84,6 @@ namespace Paint_CSharp
             x = -1;
             y = -1;
         }
+
     }
 }
